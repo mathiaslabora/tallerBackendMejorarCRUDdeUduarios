@@ -1,5 +1,7 @@
 package com.example.demo.models;
 
+
+//En este archivo refactorice nombres de español a ingles.
 import javax.persistence.*;
 
 @Entity
@@ -10,17 +12,19 @@ public class UserModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
 
+
+
     private  Long id;
 
     private String name;
     private String email;
-    private Integer prioridad;
+    private Integer priority;
 
-    public void setPrioridad(Integer prioridad){
-        this.prioridad = prioridad;
+    public void setPriority(Integer priority){
+        this.priority = priority;
     }
-    public Integer getPrioridad(){
-        return prioridad;
+    public Integer getPriority(){
+        return priority;
     }
 
     public Long getId() {
