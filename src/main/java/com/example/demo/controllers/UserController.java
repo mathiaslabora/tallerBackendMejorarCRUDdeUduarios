@@ -19,9 +19,7 @@ public class UserController {
 
     @GetMapping()
     public ArrayList<UserModel> getUsers(){
-
         return userService.getUsers();
-
     }
 
     @PostMapping()
@@ -34,8 +32,13 @@ public class UserController {
         return this.userService.getById(id);
     }
     @GetMapping("/query")
-    public ArrayList<UserModel> getUserByPriority(@RequestParam("prioridad") Integer priority){
+    public ArrayList<UserModel> getUserByPriority(@RequestParam("priority") Integer priority){
         return this.userService.getByPriority(priority);
+    }
+//implementada busqueda por usuario
+    @GetMapping("/queryXName")
+    public ArrayList<UserModel> getUserByName(@RequestParam("name") String name){
+        return this.userService.getByName(name);
     }
 
     @DeleteMapping( path = "/{id}")

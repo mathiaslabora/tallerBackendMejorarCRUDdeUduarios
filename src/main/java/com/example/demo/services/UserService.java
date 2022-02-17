@@ -28,6 +28,10 @@ public class UserService {
         return userRepository.findByPriority(priority);
     }
 
+    public ArrayList<UserModel> getByName(String name){
+        return userRepository.findByName(name);
+    }
+
     public boolean deleteUser(Long id){
         try{
             userRepository.deleteById(id);

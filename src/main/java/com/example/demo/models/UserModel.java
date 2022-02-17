@@ -2,6 +2,7 @@ package com.example.demo.models;
 
 
 //En este archivo refactorice nombres de español a ingles.
+//Modelo estilo schema, del cual se toman las condiciones preestablecidas aqui mismo.
 import javax.persistence.*;
 
 @Entity
