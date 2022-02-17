@@ -24,8 +24,8 @@ public class UserService {
     public Optional<UserModel> getById(Long id){
         return userRepository.findById(id);
     }
-    public ArrayList<UserModel> getUserByPriority(Integer prioridad){
-        return userRepository.findByPrioridad(prioridad);
+    public ArrayList<UserModel> getByPriority(Integer priority){
+        return userRepository.findByPriority(priority);
     }
 
     public boolean deleteUser(Long id){

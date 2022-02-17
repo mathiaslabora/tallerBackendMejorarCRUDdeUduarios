@@ -35,7 +35,7 @@ public class UserController {
     }
     @GetMapping("/query")
     public ArrayList<UserModel> getUserByPriority(@RequestParam("prioridad") Integer priority){
-        return this.userService.getUserByPriority(priority);
+        return this.userService.getByPriority(priority);
     }
 
     @DeleteMapping( path = "/{id}")
