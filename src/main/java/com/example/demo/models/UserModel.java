@@ -3,8 +3,8 @@ package com.example.demo.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "usuario")
-public class UsuarioModel {
+@Table(name = "user")
+public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,7 +12,7 @@ public class UsuarioModel {
 
     private  Long id;
 
-    private String nombre;
+    private String name;
     private String email;
     private Integer prioridad;
 
@@ -31,12 +31,12 @@ public class UsuarioModel {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
